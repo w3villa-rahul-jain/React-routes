@@ -1,6 +1,6 @@
 
 import './App.css';
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <Link className="invoice" to="/invoices"><span>Invoices</span></Link>
         <Link className="invoice" to="/expanses"><span>Expanses</span></Link>
       </nav>
+      <Outlet></Outlet>
     </div>
   );
 }
